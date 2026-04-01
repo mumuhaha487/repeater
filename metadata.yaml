@@ -1,0 +1,6 @@
+name: helloworld
+display_name: 复读插件
+desc: 基于 SQLite 的 AstrBot 复读插件。
+version: v1.0.0
+author: Trae
+repo: https://github.com/AstrBotDevs/AstrBot

@@ -1,0 +1,53 @@
+{
+  "default_enabled": {
+    "description": "新会话默认是否开启复读",
+    "type": "bool",
+    "default": true
+  },
+  "scope_mode": {
+    "description": "复读生效范围",
+    "type": "string",
+    "default": "group",
+    "options": ["group", "private", "all"]
+  },
+  "repeat_threshold": {
+    "description": "连续出现多少次后触发复读",
+    "type": "int",
+    "default": 3
+  },
+  "repeat_probability": {
+    "description": "满足条件后的触发概率，0 到 1 之间",
+    "type": "float",
+    "default": 1.0
+  },
+  "cooldown_seconds": {
+    "description": "同一会话复读冷却秒数",
+    "type": "int",
+    "default": 60
+  },
+  "min_length": {
+    "description": "参与复读的最短文本长度",
+    "type": "int",
+    "default": 1
+  },
+  "max_message_length": {
+    "description": "参与统计的最大文本长度",
+    "type": "int",
+    "default": 200
+  },
+  "ignore_pure_digits": {
+    "description": "是否忽略纯数字消息",
+    "type": "bool",
+    "default": false
+  },
+  "command_prefixes": {
+    "description": "判定为指令消息的前缀列表",
+    "type": "list",
+    "default": ["/", "!", "."]
+  },
+  "ignore_prefixes": {
+    "description": "消息以这些前缀开头时不参与复读",
+    "type": "list",
+    "default": ["/", "!", "."]
+  }
+}
